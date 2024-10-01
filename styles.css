@@ -188,7 +188,7 @@ button:hover {
 }
 
 
-.ebook-header {
+/* .ebook-header {
    
     font-size: 32px;
     color: #003366; 
@@ -203,7 +203,35 @@ button:hover {
 }
 .ebook-header sup{
     font-size: 13px;
+} */
+.ebook-header {
+    font-size: 32px;
+    color: #003366; 
+    margin-bottom: 20px;
+    text-align: center; 
+    background-image: url('https://tse2.mm.bing.net/th?id=OIP.mcGy30OvqPqnN9At-WJ-jwHaEo&pid=Api&P=0&h=220');
+    height: 200px;
+    background-size: cover;
+    background-position: center; 
+    padding: 60px;
+    border-radius: 8px;
+    overflow: hidden; 
+    word-wrap: break-word; 
 }
+
+@media (max-width: 768px) {
+    .ebook-header {
+        padding: 20px; 
+        font-size: 24px;
+        height: auto; 
+        background-size: contain;
+    }
+
+    .ebook-header sup {
+        font-size: 12px;
+    }
+}
+
 
 @media (max-width: 768px) {
     .container {
