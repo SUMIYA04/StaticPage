@@ -1,0 +1,226 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+.nav1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.test span {
+    color: rgb(97, 183, 181);
+}
+
+.home a {
+    text-decoration: none;
+    margin-left: 8px;
+    color:#003366 ;
+}
+
+.msg {
+    display: flex;
+    align-items: center;
+}
+
+.msg button {
+    margin-left: 8px;
+    background-color: #0073e6;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.msg button:hover {
+    background-color: #005bb5;
+}
+
+
+.msg button:first-of-type {
+    padding: 8px;
+    background-color: transparent;
+    border: none;
+    color: #0073e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.msg button:first-of-type:hover svg {
+    fill: #005bb5;
+
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.sidebar {
+    width: 25%;
+    background-color: #fff;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.modules-section {
+    margin-bottom: 20px;
+}
+
+h2,
+h3 {
+    color: #0073e6;
+}
+
+.module {
+    width: 16rem;
+    /* display: flex; */
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.ebook {
+    width: 75%;
+    padding: 20px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.content {
+    width: 60%;
+}
+
+h1 {
+    color: #003366;
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #0073e6;
+}
+
+.form-container {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 35%;
+    margin-left: 20px;
+   
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input,
+textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    background-color: #00cc99;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #009977;
+}
+
+
+.ebook-header {
+   
+    font-size: 32px;
+    color: #003366; 
+    margin-bottom: 20px;
+    text-align: center; 
+    background-image: url('https://tse2.mm.bing.net/th?id=OIP.mcGy30OvqPqnN9At-WJ-jwHaEo&pid=Api&P=0&h=220');
+    height: 200px;
+    background-size: cover;
+    background-position: center; 
+    padding: 60px;
+    border-radius: 8px; 
+}
+.ebook-header sup{
+    font-size: 13px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar,
+    .ebook {
+        width: 100%;
+    }
+
+    .form-container {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+}
